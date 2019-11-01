@@ -17,9 +17,7 @@ for (var i = 0; i < planets.length; i++) {
   opt.textContent = planets[i].name;
   opt.value = planets[i].name;
   document.getElementById("planets").appendChild(opt);
-
 };
-
 
 function calculate() {
   var weight = document.getElementById("user-weight").value;
@@ -34,8 +32,4 @@ function calculate() {
   document.getElementById("output").innerText = "If you were hiding " + planetName + ', you would get caught ' + total.toString() + ' times!';
 }
 
-
-
 document.getElementById('calculate-button').addEventListener('click', calculate);
-
-

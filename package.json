@@ -1,5 +1,5 @@
 {
-    "name": "Where-s-Shane",
+    "name": "where-s-shane",
     "version": "0.1.0",
     "scripts": {
         "start": "static -H \"{\\\"Cache-Control\\\": \\\"no-cache, must-revalidate\\\"}\"",
@@ -12,5 +12,9 @@
         "mocha": "^3.2.0",
         "nightmare": "^3.0.1",
         "node-static": "^0.7.9"
+    },
+    "devDependencies": {
+        "less-loader": "^5.0.0",
+        "webpack": "^4.41.2"
     }
 }

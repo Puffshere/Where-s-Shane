@@ -1,14 +1,14 @@
-{
-    "version": 2,
-    "routes": [
-      { "src": "/", "dest": "/public/index.html" },
-      { "src": "/bundle.js", "dest": "/dist/bundle.js" },
-      { "src": "/css/custom.scss", "dest": "/css/custom.scss" },
-      { "src": "/(.*)", "dest": "/server/index.js" }
-    ],
-    "builds": [
-      { "src": "dist/**/*", "use": "@now/static" },
-      { "src": "public/*", "use": "@now/static" },
-      { "src": "server/*", "use": "@now/node" }
-    ]
-}
+// {
+//     "version": 2,
+//     "routes": [
+//       { "src": "/", "dest": "/public/index.html" },
+//       { "src": "/bundle.js", "dest": "/dist/bundle.js" },
+//       { "src": "/css/style.less", "dest": "/css/style.less" },
+//       { "src": "/(.*)", "dest": "/server/index.js" }
+//     ],
+//     "builds": [
+//       { "src": "dist/**/*", "use": "@now/static" },
+//       { "src": "public/*", "use": "@now/static" },
+//       { "src": "server/*", "use": "@now/node" }
+//     ]
+// }

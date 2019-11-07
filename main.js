@@ -1,34 +1,34 @@
-var planets = [
-  { name: 'on the Car Bed', gravity: 5 },
-  { name: 'in Mommy\'s Rooom', gravity: 9 },
-  { name: 'in Daddy\s Room', gravity: 3 },
-  { name: 'behind the Couch', gravity: 6 },
-  { name: 'under the Table', gravity: 12 },
-  { name: 'Outside', gravity: 4 },
-  { name: 'in the Bathroom', gravity: 2 },
-  { name: 'in the Garage', gravity: 1 },
-  { name: 'under the Bed', gravity: 7 },
-  { name: 'in the Corner', gravity: 10 },
-  { name: 'in the Office', gravity: 15 },
+var hidingSpots = [
+  { name: 'on the Car Bed', time: 5 },
+  { name: 'in Mommy\'s Rooom', time: 9 },
+  { name: 'in Daddy\s Room', time: 3 },
+  { name: 'behind the Couch', time: 6 },
+  { name: 'under the Table', time: 12 },
+  { name: 'Outside', time: 4 },
+  { name: 'in the Bathroom', time: 2 },
+  { name: 'in the Garage', time: 1 },
+  { name: 'under the Bed', time: 7 },
+  { name: 'in the Corner', time: 10 },
+  { name: 'in the Office', time: 15 },
 ];
 
-for (var i = 0; i < planets.length; i++) {
+for (var i = 0; i < hidingSpots.length; i++) {
   var opt = document.createElement("option");
-  opt.textContent = planets[i].name;
-  opt.value = planets[i].name;
-  document.getElementById("planets").appendChild(opt);
+  opt.textContent = hidingSpots[i].name;
+  opt.value = hidingSpots[i].name;
+  document.getElementById("hidingSpots").appendChild(opt);
 };
 
 function calculate() {
-  var weight = document.getElementById("user-weight").value;
-  var planet = document.getElementById("planets");
+  var weight = document.getElementById("timesHiding").value;
+  var planet = document.getElementById("hidingSpots");
   var planetName = planet.options[planet.selectedIndex].innerHTML;
-  var gravityConversion;
-  for (i = 0; i < planets.length; i++)
-    if (planet.value === planets[i].name) {
-      gravityConversion = planets[i].gravity
+  var timeConversion;
+  for (i = 0; i < hidingSpots.length; i++)
+    if (planet.value === hidingSpots[i].name) {
+      timeConversion = hidingSpots[i].time
     }
-  var total = (weight * gravityConversion);
+  var total = (weight * timeConversion);
   document.getElementById("output").innerText = "If you were hiding " + planetName + ', you would get caught ' + total.toString() + ' times!';
 }
 

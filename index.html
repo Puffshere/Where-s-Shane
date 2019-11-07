@@ -13,50 +13,44 @@
 </head>
 
 <body>
-  <div class='container'>
-    <div class='col-sm-4'>
-      <div class='titleStyle'>
-        <font face="Lakki Reddy">
-          <div class='titleStyle'>Where's Shane?</div>
-      </div>
-      <form>
-        <div class="input-field">
-          <input type="number" id="user-weight">
-          <label class="inputColor" for="user-weight">How many times I am gonna hide</label>
-        </div>
-      </form>
-      <center><select class="dropDownStyle white-text" id="planets"></select></center>
-      <p>
-        <center><button class="btn-text-color" id="calculate-button">Find</button></center>
-      </p>
-    </div>
-    <center>
-      <p id="output"></p>
-    </center>
-    <div class='answerColor white-text'>
-    </div>
-    <div class="container">
+  <div classname='outline'>
+    <div class='container'>
       <div class="row">
-        <div class="col-sm-4">
-          <div class="">
-            <div class="pic-centering">
-              <img id='universe' src="shane.jpeg" alt="" class="pictureSize img-border">
-              <img id='universe' src="car bed.jpeg" alt="" class="carStyling img-border">
-            </div>
+        <div class='col-sm-4'>
+          <div class='titleStyle'>
+            <font face="Lakki Reddy">
+              <div class=''>Where's Shane?</div>
           </div>
+          <form>
+            <div class="input-field">
+              <input type="number" id="timesHiding">
+            </div>
+            <label class="inputColor" for="timesHiding">How many times I am gonna hide</label>
+
+          </form>
+          <center><select class="dropDownStyle white-text" id="hidingSpots"></select></center>
+          <p>
+            <center><button class="btn-text-color btn-danger" id="calculate-button">Find</button></center>
+          </p>
         </div>
-        <div class="col-sm-8">
-          <div class="">
-            <div class="waldoMargins">
-              <img id='universe' src="waldoImage.png" alt="" class="waldoScene img-border">
-              <img id='universe' src="waldo2.jpg" alt="" class="waldoScene img-border">
-            </div>
-          </div>
+        <center>
+          <p id="output"></p>
+        </center>
+        <div class='answerColor white-text'>
+        </div>
+        <div class='col-sm-4'>
+          <img id='universe' src="shane.jpeg" alt="" class="pictureSize img-border">
+          <img id='universe' src="car bed.jpeg" alt="" class="carStyling img-border">
+        </div>
+        <div class='col-sm-4'>
+          <img id='universe' src="waldoImage.png" alt="" class="waldoScene img-border">
+          <img id='universe' src="waldo2.jpg" alt="" class="waldoScene img-border">
         </div>
       </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="main.js" charset="utf-8"></script>
+  </div>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+  <script src="main.js" charset="utf-8"></script>
 </body>
 
 </html>
